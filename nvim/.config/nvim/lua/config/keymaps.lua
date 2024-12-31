@@ -13,7 +13,7 @@ vim.keymap.set("n", "<C-z>", "u", { desc = "Undo" })
 -- Redo
 vim.keymap.set("n", "<C-y>", "<C-r>", { desc = "Redo" })
 --delete a line
-vim.keymap.set('n', 'dd', 'dd', { noremap = true, silent = true })
+vim.keymap.set("n", "dd", "dd", { noremap = true, silent = true })
 
 -- Increment/decrement
 vim.keymap.set("n", "+", "<C-a>")
@@ -54,8 +54,6 @@ vim.keymap.set("n", "?", ":Neotree show_help<CR>", { desc = "Neo-tree Help", sil
 -- utils.key_mapper('n', '<leader>dn', ':lua vim.diagnostic.goto_next({float={border="rounded"}})<CR>')
 -- utils.key_mapper('n', '<leader>dp', ':lua vim.diagnostic.goto_prev({float={border="rounded"}})<CR>')
 -- utils.key_mapper('n', '<leader>ds', ':lua vim.diagnostic.open_float({ focusable = false, border="rounded" })<CR>')
-
-
 
 --primagen's keybindings
 
