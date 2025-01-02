@@ -57,3 +57,12 @@ require("lazy").setup({
     },
   },
 })
+
+require("lualine").setup({
+  options = {
+    theme = {
+      normal = { c = { fg = "#ffffff", bg = "none" } }, -- Transparent background for active statusline
+      inactive = { c = { fg = "#888888", bg = "#1c1c1c" } }, -- Custom background for inactive windows
+    },
+  },
+})

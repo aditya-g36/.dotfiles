@@ -4,3 +4,4 @@ require("config.lazy")
 vim.opt.cursorline = false
 
 vim.opt.clipboard = "unnamedplus"
+vim.g.snacks_animate = false
