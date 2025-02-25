@@ -111,4 +111,4 @@ run_tmux_sessionizer() {
 
 # Key binding for Escape + f
 bindkey -s '\ef' 'run_tmux_sessionizer\n'
-
+export PATH="$HOME/bin/.local/scripts:$PATH"

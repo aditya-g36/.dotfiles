@@ -51,6 +51,8 @@ vim.keymap.set("n", "d", ":Neotree action=delete<CR>", { desc = "Delete file in 
 vim.keymap.set("n", "r", ":Neotree action=rename<CR>", { desc = "Rename file in file tree" })
 vim.keymap.set("n", "?", ":Neotree show_help<CR>", { desc = "Neo-tree Help", silent = true })
 
+-- Tmux-sessionizer
+vim.keymap.set("n", "<Esc>f", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 -- utils.key_mapper('n', '<leader>dn', ':lua vim.diagnostic.goto_next({float={border="rounded"}})<CR>')
 -- utils.key_mapper('n', '<leader>dp', ':lua vim.diagnostic.goto_prev({float={border="rounded"}})<CR>')
 -- utils.key_mapper('n', '<leader>ds', ':lua vim.diagnostic.open_float({ focusable = false, border="rounded" })<CR>')

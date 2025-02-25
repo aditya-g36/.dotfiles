@@ -14,9 +14,14 @@
     "backlight"
   ],
   "hyprland/window": {
-    "format": "{}",
+    "format": "{class}",
     "max-length": 80,
   },
+
+  "margin-top": 2,
+  "margin-right":2,
+  "margin-left":2,
+
 
   "hyprland/workspaces": {
     "disable-scroll": true,
@@ -48,7 +53,7 @@
     "format": "{:%I:%M %p   %a, %b %e}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
-  "height":20,
+  "height":35,
 
   "backlight": {
     "device": "intel_backlight",
@@ -167,7 +172,6 @@
   "custom/spotify": {
     "exec-if": "pgrep spotify",
     "exec": "/usr/bin/python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
-    "format": " <span size='large'></span> {}",
     "return-type": "json",
     "on-click": "playerctl play-pause",
     "escape": true,
